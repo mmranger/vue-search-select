@@ -327,10 +327,10 @@ See All Samples : src/components/sample
 # Run examples
 
 ```bash
-# install dependencies
-yarn install
+# build docker image
+docker build -t listsearch .
 
-# serve with hot reload at localhost:9090
-yarn run dev
+# Run docker image - serve with hot reload at localhost:9090
+docker run -p 127.0.0.1:9090:9090 listsearch
 ```
 
