@@ -326,11 +326,18 @@ See All Samples : src/components/sample
 
 # Run examples
 
+## Via Docker
+
 ```bash
 # build docker image
 docker build -t listsearch .
 
 # Run docker image - serve with hot reload at localhost:9090
-docker run -p 127.0.0.1:9090:9090 listsearch
-```
+docker run -p 127.0.0.1:9090:9090 --name listsearch listsearch
 
+# Kill container
+docker kill listsearch
+
+# remove image
+docker rmi listsearch
+```
